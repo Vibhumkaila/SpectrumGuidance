@@ -1,0 +1,51 @@
+{% extends "navbar.html" %}
+{% load static %}
+
+{% block content %}
+<style>
+ h2,p,h3,h6,h1{
+     font-family: "Times New Roman", Times, serif
+ }
+</style>
+<div id="intro" class="basic-1">
+    <div class="container">
+        <div class="text-container">
+          <h1 style="color:white; padding: 10px; background: #ff8000;text-align: center;">Welcome To Your Dashboard!</h1>
+
+        </div>
+        <hr>
+        <br>
+        <!-- <p>You can access lesson plans either by topic or by the date in which they were assigned.</p> -->
+    {% for topic, plans in topic_to_plans.items %}
+        <h2><a href = "{% url 'lessonPlans:topic-detail' topic.id %}">{{topic}}</a></h2>
+        <div class="d-flex flex-row flex-wrap align-items-center">
+        {% for plan in plans %}
+            <div class="card card-mobile">
+                <div class="card-body">
+                    <h4 class="card-title">{{ plan.title }}</h4>
+                    <p class="card-text d-none d-md-block" style="color:#fafaf8">{{ plan.aim }}</p>
+                    <a href="{% url 'lessonPlans:detail' plan.id %}" class="btn btn-secondary text-decoration-none">View More</a>     
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+        <hr>  
+    {% endfor %}
+    </div> 
+</div> 
+<style>
+    .card-mobile{
+        margin: 1rem 0.5rem 1rem 0;
+        width: 45%;
+    }
+    @media (min-width: 600px)
+    {
+        .card-mobile {
+            margin: 1rem 1rem 1rem 0;
+            width: 30%;
+        }
+    }
+</style>
+
+
+{% endblock %}

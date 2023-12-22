@@ -1,0 +1,304 @@
+{% extends "navbar.html" %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+<style>
+    body,h1,h5 {font-family: "Raleway", sans-serif}
+    body, html {height: 100%}
+    p{font-family: "Times New Roman", Times, serif;    font-size: 17px;
+}
+    .bgimg {
+      background-image: url("../../static/images/home-1f.jpg");
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+        font-size: 17px;
+
+
+    }
+    .btn-solid-lg {
+	display: inline-block;
+	padding: 1.375rem 2.125rem 1.375rem 2.125rem;
+	border: 0.125rem solid #ff8000;
+	border-radius: 0.25rem;
+	background-color:#1167b1 ;
+	color: #FAFAF8;
+	font: 700 0.75rem/0 "Montserrat", sans-serif;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+    .img-fluid-100 {
+      max-width: 100%;
+      height: auto;
+        text-align:center;
+        width:80%;
+        display:block;
+        margin:auto;
+    }
+
+.btn-solid-lg:hover {
+	background-color: #949494;
+	color: white;
+	text-decoration: none;
+}
+.col-lg-8{
+    column-gap: 1000px;
+}
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #1167b1 !important;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+</style>
+
+{#<div class="w3-content w3-section" style="max-width:500px">#}
+{#  <img class="mySlides" src="home-image1.jpeg" style="width:100%">#}
+{#  <img class="mySlides" src="home-image2.jpeg" style="width:100%">#}
+{#  <img class="mySlides" src="home-image3.jpeg" style="width:100%">#}
+{#</div>#}
+{#<div class="bgimg w3-display-container">#}
+{#    <div class="w3-display-middle w3-jumbo">#}
+{##}
+{#        <h1 style="color: #ff8000" class="w3-jumbo w3-animate-top"><b>We Assist Parents</b></h1>#}
+{#        <hr class="w3-border-orange" style="margin:auto;width:40%">#}
+{#        <!-- <h6 class="w3-center"  style="color: #1167b1"><b>Autism is a developmental disorder characterized by difficulties with social interaction and#}
+{#            communication, and by restricted and repetitive behavior.</b></h6> -->#}
+{#      <h1 class="w3-center" ><a class="btn-solid-reg page-scroll w3-large w3-center" style="background-color: #1167b1" href="{% url 'about' %}">ABOUT LEESHA</a></h1>#}
+{##}
+{##}
+{#    </div>#}
+{#  </div>#}
+
+<div id="intro" class="basic-1" style="background-color: lightsteelblue;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4">
+                <div class="text-container">
+
+{#                    <h2 style="color: #ff8000"><b>We Assist Parents</b></h2>#}
+                    <h2 style="color:white; padding: 5px; background: #ff8000;text-align: center;font-family: 'Times New Roman'"><b>We Assist Parents</b></h2>
+{#                    <hr class="w3-border-orange">#}
+                    <p style="color: black;text-align: center"><b>Training programs for parents, to bring the best possible potential in the child. We promote the child’s Physical, Psychological, Verbal, Academic, Spiritual journey. We train to follow a multisensory approach with practical based solutions being a part of your life journey like a family.
+                    </b> </p>
+
+                    <h1 class="w3-center"><a class="btn-solid-lg page-scroll w3-large" style="font-family: 'Times New Roman'" href="{% url 'about' %}">ABOUT VYOM</a></h1>
+{#                    <div class="button-container">#}
+{#                        <a class="btn-solid-reg page-scroll" href="{% url 'about' %}"><span>ABOUT LEESHA</span></a>#}
+{#                    </div>#}
+                </div>
+            </div>
+{#            <div class="col-lg-1"></div>#}
+            <div class="col-lg-8">
+                <br><br>
+                <div class="image-container right">
+                    <img class="img-fluid" src="{% static 'images/home-2f.jpg' %}" alt="alternative" style="width: 1600px;height: 500px">
+                    <img class="img-fluid" src="{% static 'images/home-4f.jpg' %}" alt="alternative" style="width: 1600px;height: 500px">
+
+                    <img class="img-fluid" src="{% static 'images/home-1f.jpg' %}" alt="alternative" style="width: 1600px;height: 500px">
+                    <img class="img-fluid" src="{% static 'images/home-5f.jpg' %}" alt="alternative" style="width: 1600px;height: 500px">
+
+                    <img class="img-fluid" src="{% static 'images/home-3f.jpg' %}" alt="alternative" style="width: 1600px;height: 500px">
+                    <img class="img-fluid" src="{% static 'images/home-6f.jpg' %}" alt="alternative" style="width: 1600px;height: 500px">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slider about">
+<h1 style="color:white; padding: 30px; background: #ff8000;text-align: center;font-family: 'Times New Roman'">Our Mission</h1>
+    <div class="container">
+
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+{#                <h2><b>Our Mission</b></h2>#}
+                <hr>
+                <h4 class="p-heading" style="width: 100%;font-family: 'Times New Roman'"><b>
+                    The children of Autism spectrum require help at many phases and any phase of their 
+                    life journey so this is the beginning and we are there for the entire life journey.
+                </b></h4>
+{#                <div class="image-container">#}
+{#                        <img class="img-fluid-100 " src="{% static 'images/mission.jpeg' %}" alt="alternative" style="width: 100%">#}
+{#                </div>#}
+
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+
+    </div>
+</div>
+    <img class="img-fluid-100 " src="{% static 'images/mission.jpeg' %}" alt="alternative" style="width: 100%;height: 40%">
+<br><br><br><br><br>
+    <marquee direction="left" height="100"bgcolor="#ff8000" color="white" style="color:white;padding: 20px;align: center;font-family: 'Times New Roman';font-size: 30px"><b>Are you interested to join the current events? <a style="color:#1167b1" href="{% url 'onlineTraining' %}">click here</a></b></marquee>
+<!-- Testimonials -->
+<div class="slider">
+    <h1 style="color:white; padding: 30px; background: #ff8000;text-align: center;font-family: 'Times New Roman'">Testimonials By Parents</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+
+{#                <h2 style="color: #1167b1"><b>Testimonials By Parents</b></h2>#}
+                <hr>
+                <p class="p-heading"></p>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-12">
+
+                <!-- Card Slider -->
+                <div class="slider-container">
+                    <div class="swiper-container card-slider">
+                        <div class="swiper-wrapper">
+
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="card">
+
+                                    <img class="card-image" src="{% static 'images/apeksha.jpeg' %}" alt="alternative">
+                                    <div class="card-body">
+                                        <div class="testimonial-text">There is lot of stuff but videos by LeeshaNobleSouls 
+                                            provide us knowledge  in a particular direction  and in well organized  manner - it is like 
+                                            a supportive treatment ...
+                                            <a href="{% url 'testimonials' %}">See more</a>
+                                        </div>
+                                        <div class="testimonial-author" style="color: #0b0b0b">Ms. Apeksha</div>
+                                    </div>
+                                </div>        
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                   <img class="card-image" src="{% static 'images/rupinder.jpeg' %}" alt="alternative">
+                                    <div class="card-body">
+                                        <div class="testimonial-text">Having a child with special needs 
+                                            is a challenge in itself… This place has been a godsend. The activities help my child gets here 
+                                            is not only helpful to her, but as a parent ...
+                                            <a href="{% url 'testimonials' %}">See more</a>
+                                        </div>
+                                        <div class="testimonial-author" style="color: #0b0b0b">Ms. Rupinder Kaur</div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+    
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img class="card-image" src="{% static 'images/sana.jpeg' %}" alt="alternative">
+                                    <div class="card-body">
+                                        <div class="testimonial-text"> As an anxious mom i have been very confused and worried for my daughter's 
+                                            future. Leesha nobel is one therapist where i found the answer ...
+                                            <a href="{% url 'testimonials' %}">See more</a>
+                                        </div>
+                                        <div class="testimonial-author" style="color: #0b0b0b">Ms. Sana</div>
+                                    </div>
+                                </div>        
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+    
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img class="card-image" src="{% static 'images/shakha.jpeg' %}" alt="alternative">
+                                    <div class="card-body">
+                                        <div class="testimonial-text">Leesha group is one to one therapy group. We can easily reach with 
+                                            our problems and get answers. Their therapy is ...
+                                            <a href="{% url 'testimonials' %}">See more</a>
+                                        </div>
+                                        <div class="testimonial-author " style="color: #0b0b0b">Dr. Shakha</div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+
+                             <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img class="card-image" src="{% static 'images/suman.jpeg' %}" alt="alternative">
+                                    <div class="card-body">
+                                        <div class="testimonial-text">Leesha group and Vyom Autism Foundation working with children aiding their teaching learning experiences. It is facilitating ..
+                                            <a href="{% url 'testimonials' %}">See more</a>
+                                        </div>
+                                        <div class="testimonial-author " style="color: #0b0b0b">Ms. Suman Lakra</div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+
+                             <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img class="card-image" src="{% static 'images/jayashree.jpeg' %}" alt="alternative">
+                                    <div class="card-body">
+                                        <div class="testimonial-text">As a mother of a special child I liked the kind of support they are providing to the parents. I wish them a great success.
+                                            <a href="{% url 'testimonials' %}">See more</a>
+                                        </div>
+                                        <div class="testimonial-author " style="color: #0b0b0b">Jayashree</div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+
+                             <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img class="card-image" src="{% static 'images/deepika.jpeg' %}" alt="alternative">
+                                    <div class="card-body">
+                                        <div class="testimonial-text">I joined in B.Ed –Special Education thinking that the degree will give me the complete understanding. But so much lag ...
+                                            <a href="{% url 'testimonials' %}">See more</a>
+                                        </div>
+                                        <div class="testimonial-author " style="color: #0b0b0b">Mrs. Deepika</div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+                        
+                        </div> <!-- end of swiper-wrapper -->
+    
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <!-- end of add arrows -->
+    
+                    </div> <!-- end of swiper-container -->
+                </div> <!-- end of sliedr-container -->
+                <!-- end of card slider -->
+
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of slider -->
+<!-- end of testimonials -->
+
+ <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("img-fluid");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+{% endblock %}

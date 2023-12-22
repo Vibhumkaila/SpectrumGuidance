@@ -1,0 +1,50 @@
+{% extends "navbar.html" %}
+{% load static %}
+
+{% block content %}
+
+
+
+<form method="post" action="{% url 'login' %}">
+  {% csrf_token %}
+  <div class="main" >
+    <p class="sign" align="center">Sign In</p>
+    {% if form.errors %}
+    <p align="center" style="font-size:14px">Your username and password didn't match.<br>Please try again.</p>
+    {% endif %}
+
+    {% if next %}
+    {% if user.is_authenticated %}
+    <p>Your account doesn't have access to this page. To proceed,
+      please login with an account that has access.</p>
+    {% else %}
+    <p>Please login to see this page.</p>
+    {% endif %}
+    {% endif %}
+    <form class="form1">
+      <div class="fontuser">
+        <input id="{{ form.username.id_for_label }}" name="{{ form.username.html_name }}" value="{{ form.username.value|default_if_none:"" }}" type="text" align="center" class="un" placeholder="Username"/>
+        <i class="fas fa-envelope icon"></i>
+
+
+
+      </div>
+      <div class="fontuser2">
+        <input id="{{ form.password.id_for_label }}" name="{{ form.password.html_name }}" value="{{ form.password.value|default_if_none:"" }}" type="password" align="center" class="pass" placeholder="Password"/>
+        <i class="fas fa-lock"></i>
+      </div>
+
+      <input type="submit" value="Sign In" class="submit"/>
+      <input type="hidden" name="next" value="{{ next }}" />
+      <!--      <p class="forgot" align="center"><a href="#">Forgot Password?</p>-->
+
+
+    </form>
+
+  </div>
+</form>
+
+
+    	
+{% endblock %}
+  

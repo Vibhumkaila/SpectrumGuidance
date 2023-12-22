@@ -1,0 +1,112 @@
+{% extends "navbar.html" %}
+{% load static %}
+
+{% block content %}
+<style>
+ h2,p,h3,h6,h1,h5,h4{
+     font-family: "Times New Roman", Times, serif
+ }
+</style>
+<div id="intro" class="basic-1">
+    <h1 style="color:white; padding: 25px; background: #ff8000;text-align: center;">Contact Us</h1>
+    <div class="container">
+        <div class="text-container">
+        </div> 
+        <br>
+
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="text-container">
+                    <h3>Get in touch!</h3>
+                    <p>
+                        <b>We're here to help and answer any question you might have. We look forward to hearing from you!
+                            <br>
+                            Connect with us through the following ways.
+                        </b>
+                    </p>
+
+                    <br>
+
+                    <h5>Email:</h5>
+                    <p><a href="mailto:vyom.autismselfhelp@gmail.com">vyom.autismselfhelp@gmail.com</a></p>
+                    <p><a href="mailto:leesha.noblesouls@gmail.com">leesha.noblesouls@gmail.com</a></p>
+
+                    <br>
+
+                    <h5>Phone:</h5>
+                    <p>Dr. Krishnaveni Achary: +91 98186 83793<i class="fa fa-whatsapp" style="font-size:20px;color: green"></i></p>
+                    <p>Mrs. Mona Goyal: +91 81462 22008<i class="fa fa-whatsapp" style="font-size:20px;color: green"></i></p>
+
+                    <br>
+                    <br>
+
+                    <h4>Facing technical difficulties?</h4>
+                    <p><b>Connect with our tech team!</b></p>
+
+                    <br>
+
+                    <h5>Email:</h5>
+
+                    <p><a href="mailto:vyom.autismselfhelp.tech@gmail.com">vyom.autismselfhelp.tech@gmail.com</a></p>
+
+                </div> 
+            </div>
+            <div class="col-lg-7">
+
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfzW1XaUXi0JBzAoEDzdVNd0i_VGcXerqYdLY5zI6l689dBFg/viewform?embedded=true" 
+                        width="640" 
+                        height="805" 
+                        frameborder="0" 
+                        marginheight="0" 
+                        marginwidth="0">
+                        Loading…
+                </iframe>
+            </div>
+        </div> 
+    </div>
+    </div> 
+</div> 
+
+
+<div class="basic-2 bg-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Looking for someone specific?</h3>
+                <p class="p-heading">Reach out to out team members. Read more about them <a href="{% url 'team' %}">here</a></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card" style="display: inline-block;">
+                    <div class="card-body">
+                        <h6 class="card-title">Mrs. Mona Goyal</h6>
+                        <p class="card-subtitle">Founder, Coordinator</p>
+                        <br>
+                        <p><b><a href="mailto:leesha.noblesouls@gmail.com" style="color: #fafaf8;">leesha.noblesouls@gmail.com</a></b></p>
+                    </div>
+                </div>
+
+                <div class="card" style="display: inline-block;">
+                    <div class="card-body">
+                        <h6 class="card-title">Dr. Krishnaveni Achary</h6>
+                        <p class="card-subtitle">Founder, Creative head</p>
+                        <br>
+                        <p><b><a href="mailto:krishnaveni.achary@gmail.com" style="color: #fafaf8;">krishnaveni.achary@gmail.com</a></b></p>
+                    </div>
+                </div>
+
+                <div class="card" style="display: inline-block;">
+                    <div class="card-body">
+                        <h6 class="card-title">Mr. Niranjan Kumar</h6>
+                        <p class="card-subtitle">Founder, Executive Director</p>
+                        <br>
+                        <p><b><a href="mailto:leesha.noblesouls@gmail.com" style="color: #fafaf8;">leesha.noblesouls@gmail.com</a></b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
